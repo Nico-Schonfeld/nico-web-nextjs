@@ -42,6 +42,7 @@ const HomeClient = () => {
           <Button className="shadow-transparent hover:shadow-lg transition-all">
             {text.home.buttonContact.button}
           </Button>
+
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-red-400/10 flex items-center justify-center">
               <div className="h-2 w-2 rounded-full bg-red-400"></div>
