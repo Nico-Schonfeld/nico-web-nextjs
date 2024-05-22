@@ -1,0 +1,77 @@
+{
+  "layout": {
+    "home": {
+      "avatar": "https://github.com/Nico-Schonfeld.png",
+      "title": "FullStack Developer.",
+      "subTitle": "Developing the future!",
+      "user": "@nicoschonfeld",
+      "description": "Hello! My name is Nicolás Schönfeld, I am a Full-Stack developer although I love doing Front-End. I am 23 years old, I live in Cruz del Eje Córdoba Argentina. I am creative and I strive to innovate or improve what exists.",
+      "socialMediaTopHome": [
+        {
+          "id": 0,
+          "title": "Linkedin / ",
+          "href": "https://www.linkedin.com/in/nicoschonfeld/",
+          "titleLink": "nicoschonfeld"
+        },
+        {
+          "id": 1,
+          "title": "twitter / ",
+          "href": "https://twitter.com/home",
+          "titleLink": "@nicoschonfeld__"
+        },
+        {
+          "id": 2,
+          "title": "github / ",
+          "href": "https://github.com/Nico-Schonfeld",
+          "titleLink": "@nico-schonfeld"
+        }
+      ],
+      "buttonContact": {
+        "unavailable": "Unavailable",
+        "Available": "Available",
+        "button": "Contact me"
+      },
+      "recentEngagements": {
+        "titleSection": "Work experience",
+        "Works": [
+          {
+            "title": "25Watts",
+            "href": "https://www.25watts.com.ar/",
+            "rol": "Full-Stack / nov. 2023"
+          },
+          {
+            "title": "Nutrixya",
+            "href": "https://nutrixya.com/",
+            "rol": "Front-End / mar. 2023"
+          }
+        ]
+      },
+      "blogSection": {
+        "titleSection": "My blogs",
+        "Works": [
+          {
+            "title": "Reactjs",
+            "description": "Hello! My name is Nicolás Schönfeld, I am a Full-Stack developer although I love doing Front-End. I am 23 years old, I live in Cruz del Eje Córdoba Argentina. I am creative and I strive to innovate or improve what exists.",
+            "href": "#",
+            "date": "19/09/2001",
+            "id": 0
+          },
+          {
+            "title": "Nextjs",
+            "description": "Hello! My name is Nicolás Schönfeld, I am a Full-Stack developer although I love doing Front-End. I am 23 years old, I live in Cruz del Eje Córdoba Argentina. I am creative and I strive to innovate or improve what exists.",
+            "href": "#",
+            "date": "19/09/2001",
+            "id": 1
+          },
+          {
+            "title": "Auth JWT",
+            "description": "Hello! My name is Nicolás Schönfeld, I am a Full-Stack developer although I love doing Front-End. I am 23 years old, I live in Cruz del Eje Córdoba Argentina. I am creative and I strive to innovate or improve what exists.",
+            "href": "#",
+            "date": "19/09/2001",
+            "id": 2
+          }
+        ]
+      }
+    }
+  }
+}
