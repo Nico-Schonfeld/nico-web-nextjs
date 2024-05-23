@@ -28,7 +28,7 @@
       ],
       "buttonContact": {
         "unavailable": "Unavailable",
-        "Available": "Available",
+        "available": "Available",
         "button": "Contact me"
       },
       "recentEngagements": {
@@ -42,13 +42,13 @@
           {
             "title": "Nutrixya",
             "href": "https://nutrixya.com/",
-            "rol": "Front-End / mar. 2023"
+            "rol": "Front-End / mar. 2022"
           }
         ]
       },
       "blogSection": {
         "titleSection": "My blogs",
-        "Works": [
+        "Blogs": [
           {
             "title": "Reactjs",
             "description": "Hello! My name is Nicolás Schönfeld, I am a Full-Stack developer although I love doing Front-End. I am 23 years old, I live in Cruz del Eje Córdoba Argentina. I am creative and I strive to innovate or improve what exists.",

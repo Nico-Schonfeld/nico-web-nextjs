@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const HomeClient = () => {
   const text = texts.layout;
+  const [stateContact, setStateContact] = React.useState<boolean>(false);
 
   return (
     <main className="w-full h-auto flex items-start justify-center">
@@ -41,16 +42,29 @@ const HomeClient = () => {
         </ul>
 
         <div className="bg-gray-100 w-[16rem] flex items-center gap-4 p-1 rounded-md">
-          <Button className="shadow-transparent hover:shadow-lg transition-all">
+          <Button
+            onClick={() => {
+              !stateContact ? alert("Unavailable") : null; // add function
+            }}
+            className="bg-gradient-to-t from-black to-white/30 shadow-transparent hover:shadow-lg transition-all"
+          >
             {text.home.buttonContact.button}
           </Button>
 
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 rounded-full bg-red-400/10 flex items-center justify-center">
-              <div className="h-2 w-2 rounded-full bg-red-400"></div>
+              <div
+                className={
+                  stateContact
+                    ? "h-2 w-2 rounded-full bg-green-400"
+                    : "h-2 w-2 rounded-full bg-red-400"
+                }
+              ></div>
             </div>
             <span className="text-sm text-gray-500">
-              {text.home.buttonContact.unavailable}
+              {stateContact
+                ? text.home.buttonContact.available
+                : text.home.buttonContact.unavailable}
             </span>
           </div>
         </div>
@@ -125,25 +139,25 @@ const HomeClient = () => {
           </Link>
 
           <ul className="w-full h-auto rounded-md flex flex-col gap-2 px-0 pb-5">
-            {text.home.blogSection.Works.map((work) => (
+            {text.home.blogSection.Blogs.map((blog) => (
               <li
-                key={work.title}
+                key={blog.title}
                 className="w-full flex items-center justify-between font-sans font-medium"
               >
-                <Link href={`/blog/${work.id}`} rel="noopener nowreferrer">
+                <Link href={`/blog/${blog.id}`} rel="noopener nowreferrer">
                   <Button
                     variant="link"
                     className="p-0 m-0 flex flex-col items-start"
                   >
                     <h3 className="text-xl">
-                      {work.title}{" "}
+                      {blog.title}{" "}
                       <span className="text-sm text-gray-500 font-normal">
-                        {work.date}
+                        {blog.date}
                       </span>
                     </h3>
                   </Button>
                   <p className="font-normal text-gray-500">
-                    {work.description.slice(0, 100)}...
+                    {blog.description.slice(0, 100)}...
                   </p>
                 </Link>
               </li>
