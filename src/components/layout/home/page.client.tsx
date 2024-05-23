@@ -11,13 +11,15 @@ const HomeClient = () => {
 
   return (
     <main className="w-full h-auto flex items-start justify-center">
-      <div className="w-full h-full container mx-0 md:mx-[30rem] pt-6 pb-20">
-        <Avatar className="w-16 h-16 mt-32 mb-24">
+      <div className="w-full h-full container mx-0 lg:mx-[35rem] pt-6 pb-20">
+        <Avatar className="w-16 h-16 mt-24 mb-12">
           <AvatarImage src={text.home.avatar} alt={text.home.user} />
           <AvatarFallback>{text.home.user}</AvatarFallback>
         </Avatar>
-        <h1 className="text-lg text-pretty">{text.home.title}</h1>
-        <h2 className="text-lg text-pretty mb-10">{text.home.subTitle}</h2>
+        <h1 className="text-lg font-semibold text-pretty">{text.home.title}</h1>
+        <h2 className="text-lg text-pretty font-semibold mb-10">
+          {text.home.subTitle}
+        </h2>
         <p className="max-w-[40rem] text-balance">{text.home.description}</p>
         <Button variant="link" className="px-0">
           <Link href="/about" className="text-green-500 text-sm">
